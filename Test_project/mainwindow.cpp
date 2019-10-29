@@ -217,3 +217,28 @@ void MainWindow::on_timeEdit_userTimeChanged(const QTime &time)
 {
 
 }
+
+void MainWindow::on_tabWidget_currentChanged(int index)
+{
+
+}
+
+void MainWindow::on_radioButton_2_clicked()
+{
+
+}
+
+void MainWindow::on_radioButton_clicked()
+{
+
+}
+
+void MainWindow::on_fontComboBox_2_currentFontChanged(const QFont &f)
+{
+
+}
+
+void MainWindow::on_lineEdit_12_cursorPositionChanged(int arg1, int arg2)
+{
+
+}

@@ -98,6 +98,16 @@ private slots:
 
     void on_timeEdit_userTimeChanged(const QTime &time);
 
+    void on_tabWidget_currentChanged(int index);
+
+    void on_radioButton_2_clicked();
+
+    void on_radioButton_clicked();
+
+    void on_fontComboBox_2_currentFontChanged(const QFont &f);
+
+    void on_lineEdit_12_cursorPositionChanged(int arg1, int arg2);
+
 private:
     Ui::MainWindow *ui;
 };
