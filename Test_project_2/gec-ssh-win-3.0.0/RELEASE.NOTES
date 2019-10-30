@@ -1,0 +1,51 @@
+			    Release Notes
+		       Galleon libssh examples
+			    Version 3.0.0
+				   
+This version of the Windows examples is based on:
+
+  libssh  - version 0.7.3
+  zlib    - version 1.2.8
+  openssl - version 1.0.2h
+
+These libaries were downloaded from KDE Project:
+
+  http://winkde.org/pub/kde/ports/win32/releases/stable/4.8.0/
+
+All examples have been developed and tested with:
+
+  Microsoft Visual Studio 2015 Professional
+
+They can also be built with:
+
+  Microsoft Visual C++ 2010 Express,
+  Microsoft Visual Studio 2012
+  Microsoft Visual Studio 2012 Express for Windows Desktop
+  Microsoft Visual Studio 2013 Professional
+
+The Linux examples is built for Debian 6.0.x amd64 with GCC 4.4.5,
+and is based:
+
+  libssh-4 - version 0.4.5
+  zlib1g   - version 1.2.5
+  libssl   - version 0.9.8
+
+
+Release History
+---------------
+3.0.0
+        - Updated libssh, zlib, and openssl libraries used by Windows
+          examples
+        - Updated the utility function issue_command() to take user
+          name and password as parameters
+        - Added example, ssh-exec, that executes arbitrary command on
+          a remote host
+
+2.0.0 
+        - Added example showing how to fetch BIT results from the XSR
+
+1.1.0   
+	- Updated libssh for Windows to version 0.5.2
+
+1.0.0
+      	- Initial version with support for recording

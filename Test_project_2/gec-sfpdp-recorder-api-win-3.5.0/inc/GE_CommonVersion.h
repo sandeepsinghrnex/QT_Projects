@@ -1,0 +1,6 @@
+#ifndef GE_COMMONVERSION_H_
+#define GE_COMMONVERSION_H_
+
+#define GE_COMMON_VERSION "2.4.1"
+
+#endif /* GE_COMMONVERSION_H_ */

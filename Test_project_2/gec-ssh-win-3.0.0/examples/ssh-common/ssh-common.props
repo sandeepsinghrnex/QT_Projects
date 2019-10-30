@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <LIBSSH_DIR>..\..\libssh-vc140-0.7.3</LIBSSH_DIR>
+    <ZLIB_DIR>..\..\zlib-vc140-1.2.8</ZLIB_DIR>
+    <OPENSSL_DIR>..\..\openssl-vc140-1.0.2h</OPENSSL_DIR>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\ssh-common;$(LIBSSH_DIR)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="LIBSSH_DIR">
+      <Value>$(LIBSSH_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ZLIB_DIR">
+      <Value>$(ZLIB_DIR)</Value>
+    </BuildMacro>
+    <BuildMacro Include="OPENSSL_DIR">
+      <Value>$(OPENSSL_DIR)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

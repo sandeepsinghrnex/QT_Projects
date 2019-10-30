@@ -29,3 +29,18 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/gec-sfpdp-recorder-api-win-3.5.0/lib/release/ -lsfpdp-recorder-api-100
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/gec-sfpdp-recorder-api-win-3.5.0/lib/debug/ -lsfpdp-recorder-api-100
+else:unix: LIBS += -L$$PWD/gec-sfpdp-recorder-api-win-3.5.0/lib/ -lsfpdp-recorder-api-100
+
+INCLUDEPATH += $$PWD/gec-sfpdp-recorder-api-win-3.5.0
+message("INCLUDEPATH=$$INCLUDEPATH")
+DEPENDPATH += $$PWD/gec-sfpdp-recorder-api-win-3.5.0
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/gec-sfpdp-recorder-api-win-3.5.0/lib/release/ -lsfpdp-recorder-api-100
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/gec-sfpdp-recorder-api-win-3.5.0/lib/debug/ -lsfpdp-recorder-api-100
+else:unix: LIBS += -L$$PWD/gec-sfpdp-recorder-api-win-3.5.0/lib/ -lsfpdp-recorder-api-100
+
+INCLUDEPATH += $$PWD/gec-sfpdp-recorder-api-win-3.5.0/lib/Debug
+DEPENDPATH += $$PWD/gec-sfpdp-recorder-api-win-3.5.0/lib/Debug
